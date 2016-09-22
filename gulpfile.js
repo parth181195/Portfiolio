@@ -66,7 +66,7 @@ gulp.task('watch', function() {
     // Watch the input folder for change,
     // and run according tasks when something happens
     gulp.watch(['_assets/_sass/*.sass'], ['sass']);
-    gulp.watch(['_assets/_jadefiles/*.jade'], ['jade']);
+    gulp.watch(['_assets/_jadefiles/*.jade'], ['jade-watch']);
     gulp.watch(['_assets/_javascripts/**'], ['js-watch']);
     gulp.watch(['_assets/_images/**'], ['img']);
 
