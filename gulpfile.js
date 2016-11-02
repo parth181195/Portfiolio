@@ -16,7 +16,7 @@ gulp.task("jade", function(){
 gulp.task('sass', function () {
   return gulp
     // input files for sass
-    .src('_assets/_sass/*.sass')
+    .src('_assets/_sass/main.sass')
     // Run Sass on those files
     .pipe(sass())
     // auto-prefixer for sass
@@ -52,7 +52,10 @@ gulp.task('jade-watch', ['jade'], function (done) {
     browserSync.reload();
     done();
 });
-
+gulp.task('img-watch', ['img'], function (done) {
+    browserSync.reload();
+    done();
+});
 //start server with browser sync in _site directory
 gulp.task('browser-sync', ['jade','sass','js','img'], function(done) {
     browserSync({
@@ -65,11 +68,10 @@ gulp.task('browser-sync', ['jade','sass','js','img'], function(done) {
 gulp.task('watch', function() {
     // Watch the input folder for change,
     // and run according tasks when something happens
-    gulp.watch(['_assets/_sass/*.sass'], ['sass']);
+    gulp.watch(['_assets/_sass/**/*.sass'], ['sass']);
     gulp.watch(['_assets/_jadefiles/*.jade'], ['jade-watch']);
     gulp.watch(['_assets/_javascripts/**'], ['js-watch']);
-    gulp.watch(['_assets/_images/**'], ['img']);
-
+    gulp.watch(['_assets/_images/**'], ['img-watch']);
 });
 
 

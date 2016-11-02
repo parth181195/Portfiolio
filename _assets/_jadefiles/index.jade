@@ -6,10 +6,42 @@ html(lang='en')
       meta(name="description", content="")
       meta(name="author", content="parth_jansari")
       meta(name="viewport", content="width=device-width, initial-scale=1")
-      link(rel="stylesheet", href="css/style.css")
+      link(rel="stylesheet", href="css/main.css")
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400')    
     body
-      h1 Your own starter template equpied with 
-      p Jade, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
+      .nav-toggle
+        .bar.one
+        .bar.two
+        .bar.three
+      nav
+        h2.logo Parth Jansari
+        ul.links
+          li Home
+          li About
+          li Work
+          li Contact
+      .number
+        span 01
+      #home
+        .name
+          h1 Parth Jansari
+        .des
+          .first
+            h1 User
+          .toggle
+            .after
+            h1.one Experience
+            h1.two Interface
+          .last
+            h1 Designer
+      #about
+        .title
+          h1.about About
+        .disc
+          p I am a guy who is trying to grow up and do mature stuff but ends up doing Designing and making cool stuff.I have three years of experience in graphic , UI/UX designing &  frontend Designing.
+      #work
+        .title
+          h1 Work
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js")
