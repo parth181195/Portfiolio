@@ -1,7 +1,10 @@
 @import "0-tools/reset.scss"
 @import "1-base/vars.sass"
-
+html
+  overflow-x: hidden
 body
+  width: 100vw
+  overflow: hidden
   ::selection
     color: $w
     background: $b
@@ -10,3 +13,17 @@ body
   @import "3-layouts/home.sass"
   @import "3-layouts/about.sass"
   @import "3-layouts/work.sass"
+  .overlay
+    display: none
+    z-index: 99
+    opacity: 0
+    background: rgb(0, 0, 0)
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+  .container
+    position: relative
+    width: 100vw
+    height: 100vh

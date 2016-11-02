@@ -1,17 +1,39 @@
+$c-width: 280px
+$mar-x: 120px
 #work
-  position: absolute
-  top: 200vh
-  height: 100vh
-  background: rgb(251, 41, 69)
   .title
     h1
       font-family: $ro
       font-weight: 300
-      padding-left: 30px
+      padding-left: 20px
       margin: 0
       margin-top: 50px
-@media(min-width:850px)
-  #work
-    .title
-      h1
-        margin-top: 70px
+  .subtitle
+    h1
+      font-size: 2.5em
+      font-weight: 100
+      padding-left: 30px
+      margin: 0
+      font-family: $ro
+  .wrapper
+    width: 520px
+    margin: auto
+    height: 360px
+    overflow-x: hidden
+    background: rgb(84, 99, 129)
+    .cards
+      position: relative
+      height: $c-width
+      .card
+        background: $w
+        z-index: 2
+        position: absolute
+        top: 0
+        display: inline-block
+        width: $c-width
+        height: $c-width
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15)
+      @for $i from 1 through 10
+        .card:nth-child(#{$i})
+          margin: 0 calc(#{$mar-x} * #{$i})
+          left: calc(#{$c-width} * #{$i} - #{$c-width})

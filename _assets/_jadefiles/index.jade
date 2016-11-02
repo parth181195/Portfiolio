@@ -9,6 +9,8 @@ html(lang='en')
       link(rel="stylesheet", href="css/main.css")
       link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400')    
     body
+      .number
+        p 01
       .nav-toggle
         .bar.one
         .bar.two
@@ -20,30 +22,52 @@ html(lang='en')
           li About
           li Work
           li Contact
-      .number
-        span 01
-      #home
-        .name
-          h1 Parth Jansari
-        .des
-          .first
-            h1 User
-          .toggle
-            .after
-            h1.one Experience
-            h1.two Interface
-          .last
-            h1 Designer
-      #about
-        .title
-          h1.about About
-        .disc
-          p I am a guy who is trying to grow up and do mature stuff but ends up doing Designing and making cool stuff.I have three years of experience in graphic , UI/UX designing &  frontend Designing.
-      #work
-        .title
-          h1 Work
+      .container
+        #home
+          .name
+            h1 Parth Jansari
+          .des
+            .first
+              h1 User
+            .toggle
+              .after
+              h1.one Experience
+              h1.two Interface
+            .last
+                h1 Designer
+      .container
+        #about
+          .title
+            h1.about About
+          .disc
+            p I am a guy who is trying to grow up and do mature stuff but ends up doing Designing and making cool stuff.I have three years of experience in graphic , UI/UX designing &  frontend Designing.
+      .container
+        #work
+          .title
+            h1 Work
+          .subtitle
+            h1 Graphic
+          .wrapper
+            .cards
+              .card
+              .card
+              .card
+              .card
+          .subtitle
+            h1 Visualization
+          .wrapper
+            .icon.left
+            .icon.right
+            .cards
+              .card
+              .card
+              .card
+              .card
+      .overlay
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
+      script(src="js/Draggable.min.js")
+      script(src="js/ThrowPropsPlugin.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js")
       script(src="js/app.js")
 

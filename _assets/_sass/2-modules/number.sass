@@ -1,10 +1,12 @@
 .number
-  opacity: 0.08
-  position: fixed
-  bottom: 0
-  right: 0
-  span
-    position: relative
+  opacity: 0.99
+  p
+    bottom: 0
+    right: 0
+    z-index: -100
+    position: fixed
+    display: inline-block
+    color: rgba(0, 0, 0, 0.08)
     margin: 0
     font-size: 40vw
     font-family: $mo
@@ -21,5 +23,5 @@
       background-color: $w
 @media screen and (orientation:landscape)
   .number
-    span
+    p
       font-size: 40vh
